@@ -13,9 +13,10 @@ console.log(allCatItem)
 function Gallery() {
 
     const [items, setItems] = useState(Menus);
-    const [catItem, setCatItem] = useState(allCatItem)
+    const [catItem] = useState(allCatItem)
 
     const filterItem = (category) => {
+
         if (category === "All Time") {
             setItems(Menus);
             return;
